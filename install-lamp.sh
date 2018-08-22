@@ -9,6 +9,7 @@ sudo mkdir /var/log/php
 sudo chown www-data /var/log/php
 sudo apt install php-curl php-gd php-mbstring php-mcrypt php-xml php-xmlrpc
 sudo apt install libapache2-mod-php7.0 php7.0-mysql
+sudo ufw allow in "Apache Full"
 sudo systemctl restart apache2
 
 php -v
