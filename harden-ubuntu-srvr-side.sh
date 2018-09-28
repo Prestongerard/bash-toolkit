@@ -11,6 +11,6 @@ sudo apt-get install fail2ban
 sudo ufw allow ssh
 sudo ufw enable
 sudo ufw status
-cat ~/etc/ssh/sshd_config | grep ^PermitRootLogin
+cat /etc/ssh/sshd_config | grep ^PermitRootLogin
 
 #Ubuntu/Debian
