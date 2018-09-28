@@ -1,5 +1,5 @@
 #!/bin/sh
-sed -i 's/PermitRootLogin yes/PermitRootLogin no/' ~/etc/ssh/sshd_config
+sed -i 's/PermitRootLogin yes/PermitRootLogin no/' /etc/ssh/sshd_config
 apt-get update && apt-get upgrade -y
 read -p "Username?" $USER
 adduser $USER
