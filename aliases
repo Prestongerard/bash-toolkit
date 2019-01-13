@@ -1,0 +1,3 @@
+# print all linode nameservers
+
+alias nameservers='for x in {1..5}; do echo "ns$x.linode.com" && dig +short ns$x.linode.com; done'
